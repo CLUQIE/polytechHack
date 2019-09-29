@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Root, View, Panel } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import './style.css';
-
+import vkConnect from '@vkontakte/vk-connect';
 import EnterStart from './panels/EnterStart';
 import EnterFinish from './panels/EnterFinish';
 
@@ -33,6 +33,9 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    vkConnect.subscribe(this.connectListener);
+    vkConnect.send('VKWebAppGetUserInfo', {});
+
     const events = [
       {
         id: 1,
@@ -106,6 +109,27 @@ export default class App extends Component {
     ];
     this.update(PANEL_MAIN, { events: events });
   }
+
+  connectListener = (e) => {
+    const { type, data } = e.detail;
+    switch (type) {
+      case 'VKWebAppGetUserInfoResult':
+        this.setState({ userInfo: data });
+        break;
+      case 'VKWebAppGetClientVersionResult':
+        const { version } = data;
+        this.setState({ clientVersion: version });
+        break;
+      case 'VKWebAppAccessTokenReceived': {
+        // const { access_token, secret } = data;
+        break;
+      }
+      case 'VKWebAppAccessTokenFailed':
+        // vkConnect.send('VKWebAppClose', { status: 'error', text: 'Доступ запрещен' });
+        break;
+      default:
+    }
+  };
 
   updateEventStatus = (eventId, status) => {
     const events = (this.state[PANEL_MAIN].events || []).map((event) => {
@@ -191,6 +215,7 @@ export default class App extends Component {
               {...this.state[PANEL_MAIN]}
               update={this.update}
               go={this.go}
+              userInfo={this.state.userInfo}
             />
           </Panel>
         </View>

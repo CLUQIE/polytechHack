@@ -8,12 +8,18 @@ import './TabAccount.css';
 
 export default class TabAccount extends Component {
   static propTypes = {
+    userInfo: PropTypes.object,
     update: PropTypes.func.isRequired,
     go: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-
+    userInfo: {
+      first_name: 'Мирон',
+      last_name: 'Пузанов',
+      photo_200: 'https://sun9-27.userapi.com/c855320/v855320609/d44af/4gDyRzlWMw4.jpg?ava=1',
+      bdate: '12.11.2000',
+    },
   };
 
   constructor (props) {
@@ -31,7 +37,9 @@ export default class TabAccount extends Component {
     }
     return options;
   }
+
   render() {
+    const { userInfo } = this.props;
     return (
       <Fragment>
         <div className="Account">
@@ -39,9 +47,9 @@ export default class TabAccount extends Component {
             <div className="Account__header">
               <div className="Account__hero">
                 <div className="Account__avatar">
-                  <img src="https://sun9-27.userapi.com/c855320/v855320609/d44af/4gDyRzlWMw4.jpg?ava=1" />
+                  <img src={userInfo.photo_200} />
                 </div>
-                <div className="Account__name">Мирон Пузанов</div>
+                <div className="Account__name">{userInfo.first_name} {userInfo.last_name}</div>
               </div>
             </div>
 
@@ -56,13 +64,8 @@ export default class TabAccount extends Component {
 
               <FormLayout>
                 <Input
-                  top="ФИО"
-                  value={'Пузанов Мирон Андреевич'}
-                  onChange={() => {}}
-                />
-                <Input
                   top="Дата рождения"
-                  value={'12.11.2000'}
+                  value={userInfo.bdate}
                   onChange={() => {}}
                 />
                 <Input
