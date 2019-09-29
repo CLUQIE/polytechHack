@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/polytechHack/static/css/main.cd73b641.chunk.css",
+    "main.js": "/polytechHack/static/js/main.afc9f4c0.chunk.js",
+    "main.js.map": "/polytechHack/static/js/main.afc9f4c0.chunk.js.map",
+    "runtime-main.js": "/polytechHack/static/js/runtime-main.6b7cd6ad.js",
+    "runtime-main.js.map": "/polytechHack/static/js/runtime-main.6b7cd6ad.js.map",
+    "static/css/2.4e89ce74.chunk.css": "/polytechHack/static/css/2.4e89ce74.chunk.css",
+    "static/js/2.8de781d4.chunk.js": "/polytechHack/static/js/2.8de781d4.chunk.js",
+    "static/js/2.8de781d4.chunk.js.map": "/polytechHack/static/js/2.8de781d4.chunk.js.map",
+    "index.html": "/polytechHack/index.html",
+    "precache-manifest.5f4a129b45abebd6aa337cb69ab5acea.js": "/polytechHack/precache-manifest.5f4a129b45abebd6aa337cb69ab5acea.js",
+    "service-worker.js": "/polytechHack/service-worker.js",
+    "static/css/2.4e89ce74.chunk.css.map": "/polytechHack/static/css/2.4e89ce74.chunk.css.map",
+    "static/css/main.cd73b641.chunk.css.map": "/polytechHack/static/css/main.cd73b641.chunk.css.map",
+    "static/media/card.jpg": "/polytechHack/static/media/card.3524a2cd.jpg",
+    "static/media/hack.jpg": "/polytechHack/static/media/hack.ab53249e.jpg"
+  }
+}
