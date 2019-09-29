@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96a7ac0112068ad5589d5414fb7d80bd",
+    "revision": "c88e8df4288b5a1212d0410291f1b1d5",
     "url": "/polytechHack/index.html"
   },
   {
-    "revision": "27eb901a52a301b0f873",
+    "revision": "bdfcc7f78f2d7981d3fc",
     "url": "/polytechHack/static/css/2.4e89ce74.chunk.css"
   },
   {
-    "revision": "ddcd00b1d58dce9141b3",
+    "revision": "d16cff034924b90c8dce",
     "url": "/polytechHack/static/css/main.cd73b641.chunk.css"
   },
   {
-    "revision": "27eb901a52a301b0f873",
-    "url": "/polytechHack/static/js/2.8de781d4.chunk.js"
+    "revision": "bdfcc7f78f2d7981d3fc",
+    "url": "/polytechHack/static/js/2.899bdbff.chunk.js"
   },
   {
-    "revision": "ddcd00b1d58dce9141b3",
-    "url": "/polytechHack/static/js/main.afc9f4c0.chunk.js"
+    "revision": "d16cff034924b90c8dce",
+    "url": "/polytechHack/static/js/main.8db8edc9.chunk.js"
   },
   {
     "revision": "c6f797d5780a4dc00641",

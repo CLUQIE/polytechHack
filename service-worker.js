@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/polytechHack/precache-manifest.5f4a129b45abebd6aa337cb69ab5acea.js"
+  "/polytechHack/precache-manifest.ec7ba17cb005b6107ce36ea217cd0276.js"
 );
 
 self.addEventListener('message', (event) => {
