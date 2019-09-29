@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c88e8df4288b5a1212d0410291f1b1d5",
+    "revision": "82921c589c16460f3db808803909bb36",
     "url": "/polytechHack/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/polytechHack/static/css/2.4e89ce74.chunk.css"
   },
   {
-    "revision": "d16cff034924b90c8dce",
+    "revision": "85c690df37d1f7c441d3",
     "url": "/polytechHack/static/css/main.cd73b641.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/polytechHack/static/js/2.899bdbff.chunk.js"
   },
   {
-    "revision": "d16cff034924b90c8dce",
-    "url": "/polytechHack/static/js/main.8db8edc9.chunk.js"
+    "revision": "85c690df37d1f7c441d3",
+    "url": "/polytechHack/static/js/main.cdb1d19d.chunk.js"
   },
   {
     "revision": "c6f797d5780a4dc00641",
